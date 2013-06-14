@@ -16,18 +16,29 @@
 
 //<![CDATA[
 $(document).ready(function() {
-  // fades flash message
-  timer = setTimeout(fadeOut, 2500);
+  // fades error message
+  timer = setTimeout(fadeOutError, 2500);
   $("#error_explanation").hide();
   $("#error_explanation").fadeIn(500);
   
+  // fades flash message
+  timer = setTimeout(fadeOut, 2500);
+  $("#flashMessage").hide();
+  $("#flashMessage p").removeClass('hide');
+  $("#flashMessage").fadeIn(500);
+
   $(".clear").click(function() {
     $(this).closest('form').find("input[type=text]").val("");
 	});
 });
 
-// funcion to fadout flash message
-function fadeOut() {
+// funcion to fadeout error message
+function fadeOutError() {
   $("#error_explanation").fadeOut(500);
+}
+
+// funcion to fadeout flash message
+function fadeOut() {
+  $("#flashMessage").fadeOut(500);
 }
 //]]>
