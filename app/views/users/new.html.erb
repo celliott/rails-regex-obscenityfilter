@@ -1,0 +1,11 @@
+<div class="user_new">
+  <h2>create account</h2>
+  <%= form_for(:user, :url => {:action => 'create'}) do |f| %>
+    <%= render(:partial => 'form', :locals => {:f => f} ) %>
+    <div class="form-buttons">
+      <%= submit_tag "", :class=> "button" %>
+      <% end %>
+    </div>
+
+</div>
+

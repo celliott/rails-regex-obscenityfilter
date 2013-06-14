@@ -1,0 +1,46 @@
+* {
+  margin:0;
+  padding:0;
+  margin: auto;
+  outline-width: 0;
+  cursor: default;
+  width: 100%;
+  padding:0 0 0 0px;
+}
+
+body {
+  margin: 0 0 40px 0; 
+  font-size: 120%;
+}
+
+h2 {
+  font-size: 190%;
+  margin: 50px auto 30px auto;
+  text-align: center;
+}
+
+input[type=text], input[type=password] {
+  width: 370px;
+  font-weight:normal;
+  font-size: 140%;
+  padding: 10px 0 8px 10px;
+  margin: 0 0 10px 0;
+  background: #fff;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  cursor: auto;
+}
+
+.button {
+  width: 174px;
+  height:150px;
+  background: url(/images/site/save_iphone.png) no-repeat 0 0; 
+}
+
+.button:hover{
+  background-position: 0 -148px;
+}
+
+.notice {
+  font-size: 100%;
+}  
