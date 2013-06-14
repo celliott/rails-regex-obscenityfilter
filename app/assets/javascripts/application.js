@@ -18,9 +18,8 @@
 $(document).ready(function() {
   // fades flash message
   timer = setTimeout(fadeOut, 2500);
-  $("#flashMessage").hide();
-  $("#flashMessage p").removeClass('hide');
-  $("#flashMessage").fadeIn(500);
+  $("#error_explanation").hide();
+  $("#error_explanation").fadeIn(500);
   
   $(".clear").click(function() {
     $(this).closest('form').find("input[type=text]").val("");
@@ -29,6 +28,6 @@ $(document).ready(function() {
 
 // funcion to fadout flash message
 function fadeOut() {
-  $("#flashMessage").fadeOut(500);
+  $("#error_explanation").fadeOut(500);
 }
 //]]>

@@ -1,11 +1,12 @@
 <div class="user_create">
   <div class="field">
     <%= f.text_field :name, :placeholder => 'name' %>  
-		<div id="error_explanation">
-			<% unless display_error(:name).blank? %>
-      	name <%= display_error(:name) %>
-    	<% end %> 
-    	
+  		<div id="error_wrap">
+  		<div id="error_explanation">
+  			<% unless display_error(:name).blank? %>
+        	name <%= display_error(:name) %>
+      	<% end %> 
+      </div>	
     </div>
   </div>
 </div>
